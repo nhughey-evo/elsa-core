@@ -8,7 +8,7 @@ namespace Elsa.Activities.Workflows.Extensions
         public static IServiceCollection AddWorkflowActivities(this IServiceCollection services)
         {
             return services
-                .AddActivity<TriggerWorkflow>()
+                .AddActivity<TriggerActivity>()
                 .AddActivity<Correlate>()
                 .AddActivity<Signaled>()
                 .AddActivity<TriggerSignal>()

@@ -18,6 +18,7 @@ namespace Elsa.Models
         public IDictionary<string, ActivityInstance> Activities { get; set; } = new Dictionary<string, ActivityInstance>();
         public Stack<WorkflowExecutionScope> Scopes { get; set; }
         public Variables Input { get; set; }
+        public Variables Output { get; set; }
         public HashSet<BlockingActivity> BlockingActivities { get; set; }
         public string[] TestItems { get; set; } = new string[0];
         public ICollection<LogEntry> ExecutionLog { get; set; }

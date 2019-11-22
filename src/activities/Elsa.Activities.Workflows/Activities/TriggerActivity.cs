@@ -17,12 +17,12 @@ namespace Elsa.Activities.Workflows.Activities
         Description = "Trigger all workflows that start with or are blocked on the specified activity type.",
         Icon = "fas fa-sitemap"
     )]
-    public class TriggerWorkflow : Activity
+    public class TriggerActivity : Activity
     {
         private readonly IWorkflowInvoker workflowInvoker;
         private readonly IWorkflowExpressionEvaluator expressionEvaluator;
 
-        public TriggerWorkflow(IWorkflowInvoker workflowInvoker, IWorkflowExpressionEvaluator expressionEvaluator)
+        public TriggerActivity(IWorkflowInvoker workflowInvoker, IWorkflowExpressionEvaluator expressionEvaluator)
         {
             this.workflowInvoker = workflowInvoker;
             this.expressionEvaluator = expressionEvaluator;
